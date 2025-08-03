@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+.one {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0d1a2d; /* Dark blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #e0e6ed; /* Light text color */
+}
+
+.contact-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent dark background for the card */
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 191, 255, 0.4); /* Blue glowing effect */
+    border: 1px solid rgba(0, 191, 255, 0.3);
+    max-width: 1000px;
+    width: 90%;
+    overflow: hidden; /* Ensures border-radius applies correctly to inner elements */
+}
+
+.contact-info {
+    flex: 1;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.2); /* Slightly darker background for the info section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid rgba(0, 191, 255, 0.2); /* Separator line */
+}
+
+.contact-info h2 {
+    color: #00bfff; /* Bright blue for "Contact" */
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.contact-info p a {
+    color: #e0e6ed; /* White for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info p a:hover {
+    color: #00bfff; /* Bright blue on hover */
+}
+
+.contact-info .fas {
+    margin-right: 10px;
+    color: #00bfff; /* Bright blue for icons */
+}
+
+.contact-form {
+    flex: 2; /* Takes up more space */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h2 {
+    color: #e0e6ed; /* White for "Let's" */
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.contact-form h2 .highlight {
+    color: #00bfff; /* Bright blue for "Talk" */
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row input,
+.form-row select,
+.contact-form textarea {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid rgba(0, 191, 255, 0.3); /* Blue border for inputs */
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.08); /* Slightly transparent white background for input fields */
+    color: #e0e6ed; /* White text color for input */
+    font-size: 1em;
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-row input::placeholder,
+.form-row select::placeholder,
+.contact-form textarea::placeholder {
+    color: #9ab0c4; /* Lighter placeholder text */
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.contact-form textarea:focus {
+    border-color: #00bfff; /* Highlight border on focus */
+    box-shadow: 0 0 8px rgba(0, 191, 255, 0.6); /* Blue glow on focus */
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-form button {
+    background-color: #00bfff; /* Bright blue for the submit button */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: flex-start; /* Align button to the left */
+}
+
+.contact-form button:hover {
+    background-color: #009acd; /* Slightly darker blue on hover */
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 191, 255, 0.2);
+        padding-bottom: 30px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-form button {
+        width: 100%; /* Full width button on small screens */
+        align-self: stretch;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="one">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Contact</h2>
+            <p>Bangalore, India</p>
+            <p><a href="mailto:peshliya23@gmail.com"><i class="fas fa-envelope"></i> sreenuyassu@gmail.com</a></p>
+            <p><a href="tel:+94770689177"><i class="fas fa-phone"></i> +91 9347093748</a></p>
+        </div>
+        <div class="contact-form">
+            <h2>Let's <span class="highlight">Talk</span></h2>
+            <form action="#" method="POST">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Name">
+                    <select name="looking_for">
+                        <option value="">What are you looking for?</option>
+                        <option value="web_design">Project Enquiry</option>
+                        <option value="development">Collabration</option>
+                        <option value="consulting">Hire Me</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="tel" name="phone_number" placeholder="Phone number">
+                </div>
+                <div class="form-row">
+                    <input type="text" name="company_name" placeholder="Company name">
+                    <input type="text" name="country" placeholder="Country">
+                </div>
+                <div class="form-row">
+                    <input type="text" name="city" placeholder="City">
+                    <input type="text" name="your_role" placeholder="Your role">
+                </div>
+                <textarea name="comments" placeholder="Write your comments..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
